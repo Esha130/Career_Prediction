@@ -1,0 +1,9 @@
+age,gender,education,location,interest,skills,soft_skills,goal
+21,Female,UG,India,Data,"Python, Excel, SQL","Teamwork,Creativity,Problem-solving,Communication","i want to work as a data scientist
+"
+21,Female,UG,India,Data,"Python, Excel, PostgreSQL, Tableau, Machine Learning","Teamwork,Creativity,Problem-solving,Communication","i want to work as a data scientist
+"
+21,Female,UG,India,Marketing,"Python, Excel, PostgreSQL, Tableau, Machine Learning","Teamwork,Creativity,Problem-solving,Communication","i want to work as a data scientist
+"
+21,Female,UG,India,Data,"Python, Excel, SQL","Communication,Creativity,Teamwork,Problem-solving",
+21,Female,UG,India,Data,"Python, Excel, SQL,Tableau,Machine Learning","Communication,Creativity,Teamwork,Problem-solving",i want to grow as a data scientist

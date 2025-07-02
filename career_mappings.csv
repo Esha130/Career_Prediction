@@ -1,0 +1,9 @@
+Interest,Career,Suggested Skills,Average Salary (India),Popular Courses,Image
+Data,Data Analyst,Excel;SQL;Power BI,600000,Google Data Analytics (Coursera),career_images/Data Analyst.png
+AI,Machine Learning Engineer,Python;TensorFlow;Statistics,1200000,DeepLearning.AI ML Specialization (Coursera),career_images/Machine Learning Engineer.png
+Design,UI/UX Designer,Figma;Adobe XD;Creativity,800000,Google UX Design (Coursera),career_images/UIUX Designer.png
+Finance,Financial Analyst,Excel;Finance;Tableau,700000,Financial Analysis for Beginners (Udemy),career_images/Financial Analyst.png
+Marketing,Digital Marketer,SEO;Google Ads;Copywriting,500000,Meta Social Media Marketing (Coursera),career_images/Digital Marketer.png
+Programming,Software Developer,DSA;Git;Python,1000000,CS50x (Harvard OpenCourseWare),career_images/Software Developer.png
+Management,Product Manager,Leadership;Roadmapping;Scrum,1200000,Product Management by Duke (Coursera),career_images/Product Manager.png
+Cybersecurity,Cybersecurity Analyst,Networking;Linux;SIEM Tools,900000,Google Cybersecurity (Coursera),career_images/Cybersecurity Analyst.png
