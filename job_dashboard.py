@@ -75,7 +75,7 @@ goal = st.sidebar.text_area("Career Goal", placeholder="I want to work in AI and
 # --- PROCESSING ---
 if st.sidebar.button("🔍 Recommend Careers"):
 
-    matched = career_df[career_df["Interest"] == interest]
+    matched = career_df[career_df["Interest"].isin(user_interests)]
     if matched.empty:
         st.error("Sorry, no careers found for that interest.")
     else:
@@ -103,7 +103,7 @@ if st.sidebar.button("🔍 Recommend Careers"):
         user_log = pd.DataFrame([{
             "age": age,
             "gender": gender,
-            "education": education,
+            "education": full_education,
             "location": location,
             "interest": interest,
             "skills": skills,
