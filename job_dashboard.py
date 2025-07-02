@@ -15,55 +15,77 @@ st.markdown("### Helping students choose the right career path based on interest
 st.sidebar.header("📝 Your Details")
 age = st.sidebar.number_input("Age", 16, 50, 22)
 gender = st.sidebar.selectbox("Gender", ["Male", "Female", "Other"])
+
+# --- EDUCATION DETAIL SECTION ---
 st.header("🎓 Tell us about your Education")
 
-# Step 1: Main education level
 education_level = st.selectbox(
     "📘 What is your highest level of education?",
     ["High School", "Diploma", "Bachelor's", "Master's", "PhD"]
 )
 
-bachelor_stream = ""
+education_stream = ""
 degree_focus = ""
 
-# Step 2: If Bachelor's selected
-if education_level == "Bachelor's":
-    bachelor_stream = st.selectbox(
+# High School
+if education_level == "High School":
+    education_stream = st.selectbox(
+        "🏫 What was your stream?",
+        ["Science", "Commerce", "Arts", "Other"]
+    )
+    degree_focus = st.text_input("✍️ Optional: Add any focus subject or board")
+
+# Diploma
+elif education_level == "Diploma":
+    education_stream = st.selectbox(
+        "🏫 What was your diploma specialization?",
+        ["Computer Engineering", "Electronics", "Business", "Mechanical", "Design", "Other"]
+    )
+
+# Bachelor's
+elif education_level == "Bachelor's":
+    education_stream = st.selectbox(
         "📚 What was your stream in Bachelor's?",
         ["Science", "Commerce", "Engineering", "Arts", "Computer Applications", "Other"]
     )
-
-    # Step 3: Stream-specific specialization
-    if bachelor_stream == "Science":
-        degree_focus = st.selectbox(
-            "🔍 Specify your degree specialization",
-            ["BSc in Data Science and Business Analytics", "BSc in IT", "BSc in Statistics", "BSc in Physics", "Other"]
-        )
-    elif bachelor_stream == "Engineering":
-        degree_focus = st.selectbox(
-            "🔍 Specify your engineering branch",
-            ["Computer Science", "Information Technology", "Electronics", "Mechanical", "Other"]
-        )
-    elif bachelor_stream == "Commerce":
-        degree_focus = st.selectbox(
-            "🔍 Specify your commerce specialization",
-            ["BCom", "BBA", "CA/CS", "Other"]
-        )
-    elif bachelor_stream == "Arts":
-        degree_focus = st.selectbox(
-            "🔍 Specify your arts specialization",
-            ["BA in Psychology", "BA in Economics", "BA in English", "Other"]
-        )
+    if education_stream == "Science":
+        degree_focus = st.selectbox("🔍 Specialization", ["BSc in Data Science", "BSc in Physics", "Other"])
+    elif education_stream == "Engineering":
+        degree_focus = st.selectbox("🔍 Specialization", ["Computer Science", "IT", "Mechanical", "Other"])
+    elif education_stream == "Commerce":
+        degree_focus = st.selectbox("🔍 Specialization", ["BCom", "BBA", "CA", "Other"])
+    elif education_stream == "Arts":
+        degree_focus = st.selectbox("🔍 Specialization", ["BA in Psychology", "BA in Economics", "Other"])
     else:
-        degree_focus = st.text_input("✍️ Enter your degree specialization:")
+        degree_focus = st.text_input("✍️ Enter your Bachelor's specialization:")
 
-# Step 4: Build final education string
-if education_level == "Bachelor's":
-    full_education = f"{education_level} in {bachelor_stream} - {degree_focus}"
+# Master's
+elif education_level == "Master's":
+    education_stream = st.selectbox(
+        "📚 What was your stream in Master's?",
+        ["Science", "Engineering", "MBA", "Arts", "Computer Applications", "Other"]
+    )
+    if education_stream == "Science":
+        degree_focus = st.selectbox("🔍 Specialization", ["MSc in Data Science", "MSc in Statistics", "Other"])
+    elif education_stream == "Engineering":
+        degree_focus = st.selectbox("🔍 Specialization", ["M.Tech in CS", "M.Tech in IT", "Other"])
+    elif education_stream == "MBA":
+        degree_focus = st.selectbox("🔍 Specialization", ["Finance", "Marketing", "Analytics", "Other"])
+    elif education_stream == "Arts":
+        degree_focus = st.selectbox("🔍 Specialization", ["MA in Psychology", "MA in Economics", "Other"])
+    else:
+        degree_focus = st.text_input("✍️ Enter your Master's specialization:")
+
+# PhD
+elif education_level == "PhD":
+    education_stream = st.text_input("📚 Field of Research")
+    degree_focus = st.text_input("🔍 Topic or Specialization")
+
+# Final Education String
+if degree_focus:
+    full_education = f"{education_level} in {education_stream} - {degree_focus}"
 else:
-    full_education = education_level
-
-st.markdown(f"✅ You entered: **{full_education}**")
+    full_education = f"{education_level} in {education_stream}"
 
 location = st.sidebar.selectbox("Preferred Location", ["India", "USA", "UK", "Remote"])
 interest = st.sidebar.selectbox("Interest Area", sorted(career_df["Interest Areas"].unique()))
@@ -94,7 +116,13 @@ if st.sidebar.button("🔍 Recommend Careers"):
             with col2:
                 st.subheader(f"🚀 Career Path: {row['Career']}")
                 st.markdown(f"**Suggested Skills:** {row['Required Skills']}")
-                st.markdown(f"**Average Salary in {location}:** ₹{int(row['Average Salary (India)']):,} / year")
+                salary_column = f"Average Salary ({education_level})"
+                base_salary = row.get(salary_column, "N/A")
+                if str(base_salary).isdigit():
+                    st.markdown(f"**Average Salary in {location} for {education_level}:** ₹{int(base_salary):,} / year")
+                else:
+                    st.markdown(f"**Average Salary in {location} for {education_level}:** Not Available")
+                
                 st.markdown(f"**Popular Course:** {row['Popular Courses']}")
                 st.markdown("---")
         
