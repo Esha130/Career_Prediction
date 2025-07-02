@@ -1,23 +1,23 @@
-Career,Required Education,Required Skills,Related Roles,Popular Courses
-Software Developer,Bachelor in STEM,Python;Java;DSA;OOP,Senior Software Engineer | Full Stack Developer,CS50x (Harvard);Meta Backend Developer (Coursera)
-Frontend Engineer,Bachelor in STEM,HTML;CSS;JavaScript;React,UI Engineer | Full Stack Developer,Meta Front-End Certificate;React Nanodegree
-Backend Engineer,Bachelor in STEM,Java;Node.js;REST;SQL,Software Architect | Platform Engineer,Meta Backend Developer;REST API Design by Coursera
-DevOps Engineer,Bachelor in STEM,Docker;Kubernetes;CI/CD;Linux,Site Reliability Engineer | Cloud Engineer,Google DevOps Engineer;Docker & Kubernetes (Udemy)
-Site Reliability Engineer,Bachelor in STEM,SRE Principles;IaC;Monitoring,SRE Architect | Senior DevOps Engineer,SRE Foundations by Google;Reliable Systems by Coursera
-DevSecOps Engineer,Bachelor in STEM,DevOps + Security;Terraform;CI/CD,Security Engineer | Compliance Engineer,DevSecOps by Coursera;Security Automation
-Cloud Architect,Bachelor in STEM,AWS;Azure;GCP;Infrastructure as Code,Cloud Engineer | DevOps Architect,AWS Solutions Architect;Google Cloud Architect
-Data Scientist,Bachelor in STEM,Python;SQL;ML;Statistics,ML Engineer | Data Analyst,IBM Data Science;Applied Data Science by Michigan
-Machine Learning Engineer,Bachelor in STEM,Python;TensorFlow;Deep Learning,AI Engineer | Data Scientist,TensorFlow Developer;Advanced ML by Google
-Data Analyst,Bachelor in STEM or BBA,Excel;SQL;DataViz,BI Analyst | Business Analyst,Google Data Analytics;Data Analyst Bootcamp
-Business Analyst,Bachelor in STEM or Commerce,Excel;SQL;Power BI,Product Manager | Data Analyst,Business Analysis by Coursera;Excel to MySQL
-Product Manager,Any Degree + MBA Preferred,Leadership;Agile;Roadmapping,Scrum Master | PMO Manager,Product Management by Duke;Agile PM by UVA
-Cybersecurity Analyst,Bachelor in CS or IT,Network Security;Linux;Python,Security Engineer | SOC Analyst,IBM Cybersecurity Analyst;Google Cybersecurity Certificate
-QA / Test Engineer,Any Degree,Test Automation;Selenium;Python,Automation Engineer | QA Lead,Selenium WebDriver Training;Test Automation Bootcamp
-UI/UX Designer,Any Degree,Figma;Design Thinking;Prototyping,Graphic Designer | Product Designer,Google UX Design;UI/UX Bootcamp
-Graphic Designer,Any Degree,Photoshop;Illustrator;Creativity,UI/UX Designer | Visual Designer,Graphic Design Masterclass;Canva Design School
-Mobile App Developer,Bachelor in STEM,Flutter;Dart;Java/Kotlin,Android Developer | iOS Developer,Flutter Dev Bootcamp;Android Basics by Google
-Cloud Engineer,Bachelor in STEM,AWS;Linux;Network,CICD Engineer | DevOps Engineer,Google Cloud Engineer;AWS Solutions Architect
-Data Engineer,Bachelor in STEM,Python;ETL;SQL;Spark,Database Architect | Data Architect,Data Engineering by Coursera;ETL Testing by Udemy
-Database Administrator,Bachelor in CS,SQL;DBMS;Performance Tuning,Data Architect | DBA Lead,Oracle DBA by Udemy;SQL Server DBA
-IT Support Specialist,Any Degree,Helpdesk;Troubleshooting;Windows,Network Admin | IT Technician,CompTIA A+;IT Support by Google
-Security Engineer,Bachelor in CS or IT,Security Protocols;Pen Testing,DevSecOps Engineer | Compliance Engineer,Security Automation by Coursera;PenTest+
+Career,Interest Areas,Required Education,Required Skills,Related Roles,Popular Courses
+Software Developer,Coding;Problem Solving;Product Development,Bachelor in STEM,Python;Java;DSA;OOP,Senior Software Engineer | Full Stack Developer,CS50x (Harvard);Meta Backend Developer (Coursera)
+Frontend Engineer,Design;Creativity;Web Development,Bachelor in STEM,HTML;CSS;JavaScript;React,UI Engineer | Full Stack Developer,Meta Front-End Certificate;React Nanodegree
+Backend Engineer,Problem Solving;Architecture;APIs,Bachelor in STEM,Java;Node.js;REST;SQL,Software Architect | Platform Engineer,Meta Backend Developer;REST API Design by Coursera
+DevOps Engineer,Automation;System Design;Cloud,Bachelor in STEM,Docker;Kubernetes;CI/CD;Linux,Site Reliability Engineer | Cloud Engineer,Google DevOps Engineer;Docker & Kubernetes (Udemy)
+Site Reliability Engineer,System Reliability;Monitoring;Infra,Bachelor in STEM,SRE Principles;IaC;Monitoring,SRE Architect | Senior DevOps Engineer,SRE Foundations by Google;Reliable Systems by Coursera
+DevSecOps Engineer,Security;Automation;CI/CD,Bachelor in STEM,DevOps + Security;Terraform;CI/CD,Security Engineer | Compliance Engineer,DevSecOps by Coursera;Security Automation
+Cloud Architect,Cloud Infrastructure;Scalability,Bachelor in STEM,AWS;Azure;GCP;Infrastructure as Code,Cloud Engineer | DevOps Architect,AWS Solutions Architect;Google Cloud Architect
+Data Scientist,Research;Math;Data Exploration,Bachelor in STEM,Python;SQL;ML;Statistics,ML Engineer | Data Analyst,IBM Data Science;Applied Data Science by Michigan
+Machine Learning Engineer,AI;Problem Solving;R&D,Bachelor in STEM,Python;TensorFlow;Deep Learning,AI Engineer | Data Scientist,TensorFlow Developer;Advanced ML by Google
+Data Analyst,Logic;Business;Data Storytelling,Bachelor in STEM or BBA,Excel;SQL;DataViz,BI Analyst | Business Analyst,Google Data Analytics;Data Analyst Bootcamp
+Business Analyst,Business;Critical Thinking;Strategy,Bachelor in STEM or Commerce,Excel;SQL;Power BI,Product Manager | Data Analyst,Business Analysis by Coursera;Excel to MySQL
+Product Manager,Leadership;Innovation;Strategy,Any Degree + MBA Preferred,Leadership;Agile;Roadmapping,Scrum Master | PMO Manager,Product Management by Duke;Agile PM by UVA
+Cybersecurity Analyst,Security;Forensics;Systems,Bachelor in CS or IT,Network Security;Linux;Python,Security Engineer | SOC Analyst,IBM Cybersecurity Analyst;Google Cybersecurity Certificate
+QA / Test Engineer,Testing;Detail-Oriented;Automation,Any Degree,Test Automation;Selenium;Python,Automation Engineer | QA Lead,Selenium WebDriver Training;Test Automation Bootcamp
+UI/UX Designer,Design;Psychology;User Experience,Any Degree,Figma;Design Thinking;Prototyping,Graphic Designer | Product Designer,Google UX Design;UI/UX Bootcamp
+Graphic Designer,Visual Art;Creativity;Branding,Any Degree,Photoshop;Illustrator;Creativity,UI/UX Designer | Visual Designer,Graphic Design Masterclass;Canva Design School
+Mobile App Developer,Apps;Creativity;Mobile UX,Bachelor in STEM,Flutter;Dart;Java/Kotlin,Android Developer | iOS Developer,Flutter Dev Bootcamp;Android Basics by Google
+Cloud Engineer,Cloud Infra;Ops;Automation,Bachelor in STEM,AWS;Linux;Network,CICD Engineer | DevOps Engineer,Google Cloud Engineer;AWS Solutions Architect
+Data Engineer,Data Infra;Pipelines;ETL,Bachelor in STEM,Python;ETL;SQL;Spark,Database Architect | Data Architect,Data Engineering by Coursera;ETL Testing by Udemy
+Database Administrator,Systems;Data;Performance,Bachelor in CS,SQL;DBMS;Performance Tuning,Data Architect | DBA Lead,Oracle DBA by Udemy;SQL Server DBA
+IT Support Specialist,Troubleshooting;Customer Support,Any Degree,Helpdesk;Troubleshooting;Windows,Network Admin | IT Technician,CompTIA A+;IT Support by Google
+Security Engineer,Ethical Hacking;Security;Forensics,Bachelor in CS or IT,Security Protocols;Pen Testing,DevSecOps Engineer | Compliance Engineer,Security Automation by Coursera;PenTest+
