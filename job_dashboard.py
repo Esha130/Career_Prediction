@@ -66,7 +66,7 @@ else:
 st.markdown(f"✅ You entered: **{full_education}**")
 
 location = st.sidebar.selectbox("Preferred Location", ["India", "USA", "UK", "Remote"])
-interest = st.sidebar.selectbox("Interest Area", sorted(career_df["Interest"].unique()))
+interest = st.sidebar.selectbox("Interest Area", sorted(career_df["Interest Areas"].unique()))
 skills = st.sidebar.text_area("Key Skills (comma-separated)", "Python, Excel, SQL")
 work_style = st.sidebar.selectbox("Preferred Work Style", ["Remote", "On-site", "Hybrid"])
 soft_skills = st.sidebar.multiselect("Soft Skills", ["Communication", "Leadership", "Creativity", "Teamwork", "Problem-solving"])
@@ -75,7 +75,7 @@ goal = st.sidebar.text_area("Career Goal", placeholder="I want to work in AI and
 # --- PROCESSING ---
 if st.sidebar.button("🔍 Recommend Careers"):
 
-    matched = career_df[career_df["Interest"].isin(user_interests)]
+    matched = career_df[career_df["Interest Areas"] == interest]
     if matched.empty:
         st.error("Sorry, no careers found for that interest.")
     else:
@@ -93,7 +93,7 @@ if st.sidebar.button("🔍 Recommend Careers"):
             # --- Career Info ---
             with col2:
                 st.subheader(f"🚀 Career Path: {row['Career']}")
-                st.markdown(f"**Suggested Skills:** {row['Suggested Skills']}")
+                st.markdown(f"**Suggested Skills:** {row['Required Skills']}")
                 st.markdown(f"**Average Salary in {location}:** ₹{int(row['Average Salary (India)']):,} / year")
                 st.markdown(f"**Popular Course:** {row['Popular Courses']}")
                 st.markdown("---")
